@@ -7,9 +7,9 @@ function App() {
 
   const makeCall = useCallback(() => {
      fetch(`http://localhost:3001/person/${input}`).then(response => response.json()).then(data => {
-      fetch(`http://localhost:3001/facility/${data.val1}`).then(response => response.json()).then(dateNext => {
+      fetch(`http://localhost:3001/facility/${data.val1}`).then(response => response.json()).then(dataNext => {
         fetch(`http://localhost:3001/exposure/${data.val2}`).then(response => response.json()).then(d => {
-          setResult(d.val5 * dateNext?.val3)
+          setResult(d.val5 * dataNext?.val3)
         })
       })
     })
