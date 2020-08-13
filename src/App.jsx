@@ -17,13 +17,13 @@ function App() {
 
   return (
     <div class="container">
-      <h2>Pick a number between 1 - 10</h2>
+      <h2>Pick a number between 1 - 10:</h2>
       <div class="input-field">
           <input type="number" id="userinput" value={input} onChange={e=> setInput(e.target.value)}></input>
-          <button onClick={makeCall} disabled={input < 1 || input > 10}>Show Result</button>
-          {result !== null && <h1 class="result">{result}</h1>}
       </div>
-    </div> 
+      <button onClick={makeCall} disabled={input < 1 || input > 10}>Show Result</button>
+       {result !== null && <div class="resultBox"><h1 class="result">{result}</h1></div>}
+    </div>
   );
 }
 
