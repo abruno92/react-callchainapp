@@ -16,11 +16,14 @@ function App() {
   })
 
   return (
-    <div className="App">
-      {result !== null && <h1>{result}</h1>}
-      <input type="number" value={input} onChange={e=> setInput(e.target.value)}></input>
-      <button onClick={makeCall} disabled={input < 1 || input > 10}>Click</button>
-     </div>
+    <div class="container">
+      <h2>Pick a number between 1 - 10</h2>
+      <div class="input-field">
+          <input type="number" id="userinput" value={input} onChange={e=> setInput(e.target.value)}></input>
+          <button onClick={makeCall} disabled={input < 1 || input > 10}>Show Result</button>
+          {result !== null && <h1 class="result">{result}</h1>}
+      </div>
+    </div> 
   );
 }
 

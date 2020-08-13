@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -7,4 +7,79 @@ body {
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: rgb(93, 28, 208);
+    background: linear-gradient(90deg, rgba(93, 28, 208, 1) 25%, rgba(12, 16, 141, 1) 57%, rgba(9, 204, 244, 1) 99%, rgba(39, 39, 135, 1) 100%);
+}
+
+
+/* #form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    width: 200px;
+}
+
+#myBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    width: 200px;
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', san-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2c3e50;
+    background: linear-gradient(90deg, #2c3e50, #4ca1af);
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+}
+
+.container h2 {
+    color: #2c3e57;
+    margin-bottom: 10px;
+}
+
+.input-field {
+    position: relative;
+    border: none;
+    height: 40px;
+    width: 100px;
+}
+
+.input-field input[type='text'] {
+    position: absolute;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    color: #2c3e57;
+    width: 100px;
 }
